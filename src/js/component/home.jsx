@@ -22,7 +22,7 @@ const Home = () => {
             <button className="btn btn-info" onClick={() => addTodo()}>Add Todo</button>
 
             {todoList?.map((task, index) => (
-                <div>{task.label}<span onClick={() => deleteTodo(task.label)}>DELETE</span></div>
+                <div>{task.label}<span onClick={() => deleteTodo(task.label)}> DELETE</span></div>
             ))}
         </div>
     );
